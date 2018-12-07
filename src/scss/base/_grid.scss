@@ -21,7 +21,6 @@
 [class*='col-'] {
   min-height: 1px;
   max-width: 100%;
-  margin-bottom: 24px;
   padding-left: $col-gutter;
   padding-right: $col-gutter;
 }
@@ -36,7 +35,7 @@
   }
 }
 
-@include mediaquery--sm() {
+@include mediaquery--md() {
   @for $i from 1 through $col-num {
     .col--md-#{$i} {
       width: percentage($i / $col-num);

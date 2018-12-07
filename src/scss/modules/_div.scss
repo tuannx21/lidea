@@ -1,0 +1,52 @@
+.div-xl {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.div-lg {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.div-lg-sp {
+  @include mediaquery--md() {
+    margin-top: 50px;
+    margin-top: 50px;
+  }
+}
+
+.div-md {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.div-md-sp {
+  @include mediaquery--sm() {
+    margin-top: 50px;
+    margin-top: 50px;
+  }
+}
+
+.div-sm {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.div-xs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.div-info-sp {
+  @include mediaquery--sm() {
+    margin-top: 0px;
+    margin-bottom: 250px;
+  }
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+
+

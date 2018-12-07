@@ -9,11 +9,6 @@ $col-gutter-md: 24px !default;
 
 $col-num: 12;
 
-// Core corlor
-$primary-color: #439aff !default;
-$warning-color: #fc9f00 !default;
-$danger-color: #fc4e5c !default;
-
 // Gray color
 $light-color: #fff !default;
 $dark-color: #333 !default;
@@ -31,11 +26,11 @@ $font-size-xl: 32px !default;
 $font-size-lg: 24px !default;
 $font-size-md: 20px !default;
 $font-size-sm: 14px !default;
-$line-height-base: 1.5 !default;
+$line-height-base: 2 !default;
 $line-height-sm: 1.25 !default;
 $line-height-xs: 1.2 !default;
 $line-height-zero: 1 !default;
-$body-font-size: $font-size-base !default;
+$body-font-size: $font-size-sm !default;
 $body-line-height: $line-height-base !default;
 
 // Font weight
@@ -44,15 +39,19 @@ $font-weight-light-bold: 500 !default;
 $font-weight-bold: 700 !default;
 $body-font-weight: $font-weight-normal !default;
 
-// Z-index
-$zindex-base: 3 !default;
-$zindex-1: 100 !default;
-$zindex-2: 200 !default;
-$zindex-3: 300 !default;
-
 // Border radius
 $radius: 4px !default;
 $radius-circle: 50% !default;
 
 // Letter spacing
 $body-spacing: .04rem !default;
+
+// Customize Color
+$cream-yellow: #f6f5ed;
+$cream-green: #f0f0f0;
+$dark-orange: #d86b2a;
+$dark-blue: #005d8c;
+$light-blue: #005e8c;
+
+$main-font-color: #333333;
+

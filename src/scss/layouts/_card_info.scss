@@ -1,0 +1,29 @@
+.card-info {
+  .info {
+    .title {
+      @include mediaquery--md() {
+        margin-top: 0;
+        margin-bottom: 200px;
+      }
+
+      .title-1 {
+        @include mediaquery--md() {
+          font-size: 26px;
+          line-height: 40px;
+        }
+      }
+
+      .title-2 {
+        @include mediaquery--md() {
+          font-size: 20px;
+          line-height: 36px;
+        }
+      }
+    }
+
+    .content {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
