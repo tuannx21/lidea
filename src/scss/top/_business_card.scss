@@ -1,0 +1,17 @@
+.business-card {
+  .image-area {
+    img:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .content-area {
+    .body {
+      font-size: 16px;
+    }
+
+    .note {
+      font-size: 12px;
+    }
+  }
+}

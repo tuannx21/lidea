@@ -1,0 +1,93 @@
+//margin
+.m {
+  &--pc-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  &--pc-80 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  &--pc-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &--pc-40 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  &--sp-50 {
+    @include mediaquery--sm() {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &--sp-45 {
+    @include mediaquery--sm() {
+      margin-top: 45px;
+      margin-bottom: 45px;
+    }
+  }
+
+  &--sp-30 {
+    @include mediaquery--sm() {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &.no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+//padding
+.p {
+  &--pc-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &--pc-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &--sp-30 {
+    @include mediaquery--sm() {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &--sp-40 {
+    @include mediaquery--sm() {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &--sp-50 {
+    @include mediaquery--sm() {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &--pc-side-190 {
+    padding-left: 190px;
+    padding-right: 190px;
+  }
+
+  &--sp-0 {
+    @include mediaquery--sm() {
+      padding: 0;
+    }
+  }
+}

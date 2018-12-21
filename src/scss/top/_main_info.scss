@@ -1,9 +1,9 @@
-.section-info {
+.main-info {
   .info {
     .title {
-      @include mediaquery--md() {
+      @include mediaquery--sm() {
         margin-top: 0;
-        margin-bottom: 200px;
+        margin-bottom: 250px;
       }
 
       .title-1 {
