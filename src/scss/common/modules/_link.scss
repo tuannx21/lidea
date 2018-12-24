@@ -1,10 +1,12 @@
 .link {
   text-decoration: none;
-  color: $dark-color;
   transition: all .3s ease;
 
-  &:hover {
-    color: darken($dark-color, 20%);
+  &.is-dark {
+    color: $dark-color;
+    &:hover {
+      color: darken($dark-color, 20%);
+    }
   }
 
   &.is-dark-blue {
