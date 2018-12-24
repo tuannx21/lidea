@@ -10,9 +10,12 @@
 
 //Layouts
 @import './layouts/grid';
-@import './layouts/position';
-@import './layouts/spacing';
-@import './layouts/section';
+
+//Utils
+@import './utils/position';
+@import './utils/spacing';
+@import './utils/section';
+@import './utils/display';
 
 // Modules
 @import './modules/typography';
