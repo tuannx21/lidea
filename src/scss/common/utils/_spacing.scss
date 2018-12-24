@@ -1,40 +1,40 @@
 //margin
 .m {
-  &--pc-100 {
+  &--100 {
     margin-top: 100px;
     margin-bottom: 100px;
   }
 
-  &--pc-80 {
+  &--80 {
     margin-top: 80px;
     margin-bottom: 80px;
   }
 
-  &--pc-50 {
+  &--50 {
     margin-top: 50px;
     margin-bottom: 50px;
   }
 
-  &--pc-40 {
+  &--40 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 
-  &--sp-50 {
+  &--50-sp {
     @include mediaquery--sm() {
       margin-top: 50px;
       margin-bottom: 50px;
     }
   }
 
-  &--sp-45 {
+  &--45-sp {
     @include mediaquery--sm() {
       margin-top: 45px;
       margin-bottom: 45px;
     }
   }
 
-  &--sp-30 {
+  &--30-sp {
     @include mediaquery--sm() {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -49,43 +49,55 @@
 
 //padding
 .p {
-  &--pc-80 {
+  &--80 {
     padding-top: 80px;
     padding-bottom: 80px;
   }
 
-  &--pc-40 {
+  &--40 {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
-  &--sp-30 {
+  &--30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &--30-sp {
     @include mediaquery--sm() {
       padding-top: 30px;
       padding-bottom: 30px;
     }
   }
 
-  &--sp-40 {
+  &--40-sp {
     @include mediaquery--sm() {
       padding-top: 40px;
       padding-bottom: 40px;
     }
   }
 
-  &--sp-50 {
+  &--50-sp {
     @include mediaquery--sm() {
       padding-top: 50px;
       padding-bottom: 50px;
     }
   }
 
-  &--pc-side-190 {
+  &--15-sp {
+    @include mediaquery--sm() {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &--side-190 {
     padding-left: 190px;
     padding-right: 190px;
   }
 
-  &--sp-0 {
+  &--0-sp {
     @include mediaquery--sm() {
       padding: 0;
     }

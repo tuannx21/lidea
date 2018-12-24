@@ -1,5 +1,22 @@
 .d {
- &--pc-block {
-   display: block;
- }
+
+  &--block {
+    display: block;
+  }
+
+  &--none {
+    display: none;
+  }
+
+  &--block-sp {
+    @include mediaquery--sm() {
+      display: block;
+    }
+  }
+
+  &--none-sp {
+    @include mediaquery--sm() {
+      display: none;
+    }
+  }
 }

@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function () {
     tg.addEventListener('click',function() {
       let targetArrow = document.querySelector("#"+tg.getAttribute("arrow-target"));
       let targetContent = document.querySelector("#"+tg.getAttribute("content-target"));
-      
+
       if (targetContent.style.display==="block") {
         targetContent.style.display="none";
         targetArrow.src="images/icon/arrow_open.png";
@@ -16,4 +16,12 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  $(document).ready(function () {
+		$('.review-slide').slick({
+			dots: true,
+			autoplay: true,
+			autoplaySpeed: 2000
+		});
+	});
 })
