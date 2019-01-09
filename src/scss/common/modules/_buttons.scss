@@ -22,26 +22,26 @@
     color: $light-color;
   }
 
-  &.has-border-radius {
+  &--rounded-conner {
     border-radius: $radius;
   }
 
-  &.is-xs {
+  &--xs {
     font-size: 10px;
     padding: 5px;
   }
 
-  &.is-sm {
+  &--sm {
     font-size: 14px;
     padding: 10px 15px;
   }
 
-  &.is-md {
+  &--md{
     font-size: 16px;
     padding: 12px 20px;
   }
 
-  &.is-dark-blue {
+  &--dark-blue {
     background-color: $dark-blue;
     color: white;
   }

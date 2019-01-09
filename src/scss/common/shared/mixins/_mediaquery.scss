@@ -1,3 +1,9 @@
+@mixin mediaquery--lg() {
+  @media (min-width: $sreen-pc) {
+    @content
+  }
+}
+
 @mixin mediaquery--not-lg() {
   @media (max-width: $sreen-pc - 1) {
     @content

@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function () {
   console.log('loaded');
 
-  var toggleShowMore = Array.prototype.slice.call(document.querySelectorAll(".card-introduce .content .body-sp"));
+  var toggleShowMore = Array.prototype.slice.call(document.querySelectorAll(".content-sp"));
   toggleShowMore.forEach(function(tg) {
     tg.addEventListener('click',function() {
       let targetArrow = document.querySelector("#"+tg.getAttribute("arrow-target"));

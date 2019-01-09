@@ -1,0 +1,29 @@
+.media {
+  &--lg {
+    .media__image + .media__image {
+      margin-top: 30px;
+    }
+
+    .media__body {
+      margin-top: 40px
+    }
+
+    .media__note {
+      font-size: 12px;
+    }
+
+    & + .media--lg {
+      margin-top: 80px
+    }
+  }
+
+  &--md {
+    .media__body {
+      margin-top: 80px;
+    }
+
+    .media__body + * {
+      margin-top: 80px;
+    }
+  }
+}

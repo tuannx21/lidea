@@ -2,14 +2,14 @@
   text-decoration: none;
   transition: all .3s ease;
 
-  &.is-dark {
+  &--defalut {
     color: $dark-color;
     &:hover {
       color: darken($dark-color, 20%);
     }
   }
 
-  &.is-dark-blue {
+  &--dark-blue {
     color: $dark-blue;
 
     &:hover {

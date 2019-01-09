@@ -11,8 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   line-height: $body-line-height;
-  letter-spacing: $body-spacing;
-  color: $main-font-color;
+  color: $body-font-color;
   background-color: $light-color;
   overflow-x: hidden;
 }

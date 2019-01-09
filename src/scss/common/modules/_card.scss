@@ -1,0 +1,41 @@
+.card {
+  background-color: $light-color;
+  padding: 20px 0;
+  position: relative;
+
+  @include mediaquery--not-lg() {
+    padding: 10px;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    border-right: 3px solid $cream-green;
+    height: 100%;
+    padding: 50% 0;
+
+    @include mediaquery--not-lg() {
+      padding: 0;
+      text-align: left;
+      border-bottom: 3px solid $cream-green;
+      border-right: 0;
+
+      p {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__content {
+    padding: 10px 0;
+    height: 100%;
+
+    @include mediaquery--not-lg() {
+      cursor: pointer
+    }
+  }
+
+  +.card {
+    margin-top: 10px;
+  }
+}

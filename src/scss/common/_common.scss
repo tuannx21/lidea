@@ -1,25 +1,27 @@
 @charset 'UTF-8';
 
+//shared
+@import './shared/shared';
+
 // Reset css
 @import './base/minireset';
 
 // Base
-@import './base/variables';
-@import './base/mixins';
 @import './base/base';
 
 //Layouts
 @import './layouts/grid';
-
-//Utils
-@import './utils/position';
-@import './utils/spacing';
-@import './utils/display';
+@import './layouts/section';
 
 // Modules
 @import './modules/typography';
 @import './modules/buttons';
 @import './modules/link';
-@import './modules/background';
 @import './modules/carousel_slick';
 @import './modules/carousel_slick_theme';
+@import './modules/media';
+@import './modules/utils';
+@import './modules/card';
+@import './modules/mainvisual';
+
+

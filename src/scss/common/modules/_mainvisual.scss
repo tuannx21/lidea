@@ -1,0 +1,22 @@
+.mainvisual {
+  position: relative;
+
+  &__title {
+    margin-top: 120px;
+    line-height: 1.75;
+
+    @include mediaquery--not-lg {
+      margin-top: 0;
+    }
+  }
+
+  &__body {
+    position: absolute;
+    bottom: 0;
+
+    @include mediaquery--not-lg {
+      position: static;
+      margin-top: 8px;
+    }
+  }
+}

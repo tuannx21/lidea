@@ -25,13 +25,15 @@
   padding-right: $col-gutter;
 }
 
-@for $i from 1 through $col-num {
-  .col-#{$i} {
-    width: percentage($i / $col-num);
-  }
+@include mediaquery--lg() {
+  @for $i from 1 through $col-num {
+    .col-#{$i} {
+      width: percentage($i / $col-num);
+    }
 
-  .col-offset-#{$i} {
-    margin-left: percentage($i / $col-num);
+    .col-offset-#{$i} {
+      margin-left: percentage($i / $col-num);
+    }
   }
 }
 

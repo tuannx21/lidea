@@ -5,21 +5,34 @@ h3 {
 }
 
 h1 {
-  font-size: $font-size-xl;
+  font-size: 34px;
+
+  @include mediaquery--not-lg() {
+    font-size: 26px
+  }
 }
 
 h2 {
-  font-size: $font-size-lg;
+  font-size: 24px;
+
+  @include mediaquery--not-lg() {
+    font-size: 20px;
+  }
 }
 
-h3 {
-  font-size: $font-size-md;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-heavy-grey {
+.text--heavy-grey {
   color: $heavy-grey;
+}
+
+.text--sm {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.text--center {
+  text-align: center;
 }

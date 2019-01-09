@@ -1,0 +1,32 @@
+.hidden--sm {
+  @include mediaquery--sm() {
+    display: none;
+  }
+}
+
+.hidden--md {
+  @include mediaquery--md() {
+    display: none;
+  }
+}
+
+.hidden--lg {
+  @include mediaquery--lg() {
+    display: none;
+  }
+}
+
+.image {
+  width: 100%;
+}
+
+.image--middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image--bottom {
+  position: absolute;
+  bottom: 0;
+}
