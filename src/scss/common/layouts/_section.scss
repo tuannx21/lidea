@@ -54,6 +54,10 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
+    &.separate-sp {
+      margin-bottom: 48px;
+    }
+
     @include mediaquery--not-lg() {
       padding-top: 45px;
       padding-bottom: 45px;

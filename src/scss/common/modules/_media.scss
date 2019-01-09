@@ -57,11 +57,23 @@
         display: block;
       }
     }
+
+    & + .media--sm {
+      @include mediaquery--not-lg() {
+        margin-top: 48px;
+      }
+    }
   }
 
   &--xs {
+    position: relative;
+    width: 256px;
+    height: 490px;
+    overflow: hidden;
+
     .media__title {
       margin-top: 24px;
+      line-height: 24px;
     }
 
     .media__body {

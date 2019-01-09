@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function () {
   console.log('loaded');
 
-  var toggleShowMore = Array.prototype.slice.call(document.querySelectorAll(".content-sp"));
+  var toggleShowMore = Array.prototype.slice.call(document.querySelectorAll(".card__content-inner-sp"));
   toggleShowMore.forEach(function(tg) {
     tg.addEventListener('click',function() {
       let targetArrow = document.querySelector("#"+tg.getAttribute("arrow-target"));
@@ -22,6 +22,11 @@ window.addEventListener('DOMContentLoaded', function () {
 			dots: true,
 			autoplay: true,
 			autoplaySpeed: 2000
+    });
+    $('.season-slide').slick({
+      slidesToShow: 4,
+      autoplaySpeed: 2000,
+      variableWidth: true
 		});
 	});
 })
