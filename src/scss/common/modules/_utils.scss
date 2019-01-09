@@ -1,22 +1,29 @@
 .hidden--sm {
   @include mediaquery--sm() {
-    display: none;
+    display: none !important;
   }
 }
 
 .hidden--md {
   @include mediaquery--md() {
-    display: none;
+    display: none !important;
   }
 }
 
 .hidden--lg {
   @include mediaquery--lg() {
-    display: none;
+    display: none !important;
+  }
+}
+
+.hidden--not-lg {
+  @include mediaquery--not-lg() {
+    display: none !important;
   }
 }
 
 .image {
+  display: block;
   width: 100%;
 }
 

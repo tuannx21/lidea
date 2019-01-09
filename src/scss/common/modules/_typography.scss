@@ -20,8 +20,20 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 18px;
+
+  @include mediaquery--not-lg() {
+    font-size: 16px;
+  }
+}
+
 .text--heavy-grey {
   color: $heavy-grey;
+}
+
+.text--white {
+  color: $light-color;
 }
 
 .text--sm {
