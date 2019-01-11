@@ -1,0 +1,178 @@
+$slick-dot-size: 10px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+
+  [dir="rtl"] & {
+    float: right;
+  }
+
+  img {
+    display: block;
+  }
+
+  &.slick-loading img {
+    display: none;
+  }
+
+  &.dragging img {
+    pointer-events: none;
+  }
+
+  .slick-initialized & {
+    display: block;
+  }
+
+  .slick-loading & {
+     visibility: hidden;
+  }
+
+  .slick-vertical & {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 20px;
+  z-index: 200;
+  cursor: pointer;
+  color: transparent;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: none;
+  outline: none;
+}
+
+.slick-prev {
+  background: url(/images/icon/icon_arrow-left.png) no-repeat;
+  left: 10px;
+}
+
+.slick-next {
+  background: url(/images/icon/icon_arrow-right.png) no-repeat;
+  right: 10px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  li {
+    background-color: $gray-color;
+    border-radius: 50%;
+    border: 1px solid $gray-color;
+    position: relative;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+
+    button {
+      background: transparent;
+      border: 0;
+      display: block;
+      height: 10px;
+      width: 10px;
+      outline: none;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer;
+
+      &:hover, &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .slick-active {
+    background: $dark-blue;
+  }
+}
+
+.season-slide {
+  position: relative;
+  margin-left: -$col-gutter;
+  margin-right: -$col-gutter;
+
+  &__item {
+    padding: 0 $col-gutter;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}

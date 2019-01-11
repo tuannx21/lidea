@@ -1,4 +1,25 @@
 @charset 'UTF-8';
 
-@import './common/common';
-@import './top/all';
+//shared
+@import './shared/shared';
+
+// Reset css
+@import './base/minireset';
+
+// Base
+@import './base/base';
+
+//Layouts
+@import './layouts/grid';
+@import './layouts/section';
+@import './layouts/container';
+
+// Modules
+@import './modules/typography';
+@import './modules/buttons';
+@import './modules/link';
+@import './modules/carousel-slick';
+@import './modules/media';
+@import './modules/utils';
+@import './modules/card';
+@import './modules/mainvisual';
